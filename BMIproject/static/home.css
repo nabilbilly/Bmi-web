@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+    
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image:url(IMAGES/bg2.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+   
+}
+
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+.nav{
+    display: flex;
+    text-align: right;
+}
+    
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a {
+    text-decoration: none;
+    color:black;
+    font-size: 13px;
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+    color: #fff;
+    font-size: 100px;
+}
+p{
+    color:rgb(41, 37, 37);
+    font-size: 11px;
+    line-height: 15px;
+}
+button{
+    width: 180px;
+    color: #fff;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #000;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30%;
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.cardb{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1{
+    background-image: url(IMAGES/body-mass-index-formula.jpg);
+    
+}
+.card2{
+    background-image: url(IMAGES/fff.jpg);
+}
+.card3{
+    background-image: url(IMAGES/Doctor-790X1024.jpg);
+}
+.card4{
+    background-image: url(IMAGES/slim-woman-weigh-scales-with-measuring-her-waist-by-measure-tape-after-diet-shapely-woman.jpg);
+}
+.card:hover{
+    transform:translateY(-10px);
+}
+.cardb:hover{
+    transform:translateY(-10px);
+}
+h5{
+    color: #000;
+    text-shadow: 0 0 5px #999;
+}
+.card p{
+    text-shadow: 0 0 15px #000;
+    font-size: 8px;
+}  
+a {
+    list-style-type: none;
+    text-decoration: none;
+}
+#btn:hover{
+  color: black;
+  background-color: #fff;
+}

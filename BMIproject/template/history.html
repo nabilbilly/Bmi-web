@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn More</title>
+    <link rel="stylesheet" href="{% static 'h.css' %}">
+
+    <link href="">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="{% static 'IMAGES/logo image.png' %}" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="{% url 'bmi:home'  %}">HOME</a></li>
+                    <li><button ><a href="{% url 'bmi:history'  %}">HISTORY</a></button></li>
+                    <li><a href="{% url 'bmi:table'  %}">BMI TABLE</a></li>
+                    <li><a href="{% url 'bmi:cal'  %}">MY BMI</a></li>
+                </ul>
+            </nav>
+            <img src="{% static 'IMAGES/logo image.png' %}" class="menu-icon">
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h3>Healthy Weight, Nutrition, and Physical Activity</h3> <br>
+                  
+                <p> 
+                    <h4> Achieving and maintaining a healthy weight includes healthy eating, physical activity, optimal sleep, and stress reduction. Several other factors may also affect weight gain. <br><br><br>
+
+                        Healthy eating features a variety of healthy foods. Fad diets may promise fast results, but such diets limit your nutritional intake, can be unhealthy, and tend to fail in the long run.<br><br> <br>
+                        
+                        How much physical activity you need depends partly on whether you are trying to maintain your weight or lose weight. Walking is often a good way to add more physical activity to your lifestyle.<br><br>
+                        
+                        Managing your weight contributes to good health now and as you age. In contrast, people who have obesity, compared to those with a healthy weight, are at increased risk for many serious diseases and health conditions. See examples of programs that can help.<br><br>
+                        
+                        Helping people maintain a healthy weight is part of CDC’s work to achieve health equity.<br><br>
+                    
+                        An eating plan that helps promote health and manage your weight includes a variety of healthy foods. Add an array of colors to your plate and think of it as eating the rainbow.<br><br> Dark, leafy greens, oranges, 
+                        and tomatoes—even fresh herbs—are loaded with vitamins, fiber, and minerals. Adding frozen peppers, broccoli, or onions to stews and omelets gives them a quick and convenient boost of color and nutrients.
+                    
+                    </h4>
+
+                </p>
+                
+                
+            </div>
+         <div class="col">
+            <div class="card card1">
+                <h5>Hourglass</h5>
+                <p>Get fit,feel great.</p>
+                
+            </div>
+            
+            </div>
+          
+            <!--  <div class="card card2">
+                <h5>Apple</h5>
+                <p>Get fit,feel great.</p> <br>
+              </div>
+            
+             <div class="cols">
+                <div class="cardb card3">
+    
+                    <h5>Hourglass</h5>
+                    <p>Get fit,feel great.</p>
+                </div>
+                <div class="cardb card4">
+    
+                    <h5>Hourglass</h5>
+                    <p>Get fit,feel great.</p>
+                </div>
+            </div> -->
+           
+        
+       
+        </div>
+   
+   
+     <div> <br> <br> <br>  <br> <br> <br> <br>
+        <a href="{% url 'bmi:cal'  %}"><button type="button" id="btn">Calculate BMI</button></a>
+
+        <h3>Assessing Your Weight</h3><br>
+            <h4> 
+                A high amount of body fat can lead to weight-related diseases and other health issues.
+                 Being underweight is also a health risk. Body Mass Index (BMI) and waist circumference are screening tools to estimate weight status in relation to potential disease risk. However, 
+                 BMI and waist circumference are not diagnostic tools for disease risks. A trained healthcare provider should perform other health assessments to evaluate disease risk and diagnose disease status. <br>
+                </h4>
+            <h3>How to Measure and Interpret Weight Status</h3>
+            <h4>
+                BMI is a person’s weight in kilograms divided by the square of height in meters. <br> A high BMI can indicate high body fatness, and a low BMI can indicate too low body fatness. To calculate your BMI, see the BMI Calculator. Or determine your BMI by finding your height and weight in this BMI Index Chart.
+            </h4>
+            <ul>
+                <li>If your BMI is less than 18.5, it falls within the underweight range.</li>
+                <li>If your BMI is 18.5 to 24.9, it falls within the Healthy Weight range.</li>
+                <li>If your BMI is 25.0 to 29.9, it falls within the overweight range.</li>
+                <li>If your BMI is 30.0 or higher, it falls within the obese range.</li>
+            </ul>
+            <h4>Weight that is higher than what is considered as a healthy weight for a given height is described as overweight or obese. Weight that is lower than what is considered as healthy for a given height is described as underweight.1 <br><br>
+
+                At an individual level, BMI can be used as a screening tool but is not diagnostic of the body fatness or health of an individual. A trained healthcare provider should perform appropriate health assessments in order to evaluate an individual’s health status and risks.</h4>
+            </div>
+
+            <div class="lastimage">
+                <div class="image one">
+                    <h5>Hourglass</h5>
+                    <p>Get fit,feel great.</p>
+                    
+                </div>
+
+                <div class="lastimage">
+                    <div class="image two">
+                        <h5>Hourglass</h5>
+                        <p>Get fit,feel great.</p>
+                        
+                    </div>
+                    
+                    </div>
+                </div>
+
+                
+            
+            
+            
+   
+    </div>
+
+
+
+    
+</body>
+</html>

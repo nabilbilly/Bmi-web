@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table and formula</title>
+    <link rel="stylesheet" href="{% static 'table.css' %}">
+
+    <link href="">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="{% static 'IMAGES/logo image.png' %}" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="{% url 'bmi:home'  %}">Home</a></li>
+                    <li><a href="{% url 'bmi:history'  %}">HISTORY</a></li>
+                    <li><a href="{% url 'bmi:table'  %}">BMI TABLE</a></li>
+                    <li><a href="{% url 'bmi:cal'  %}">MY BMI</a></li>
+                </ul>
+            </nav>
+            <img src="{% static 'IMAGES/logo image.png' %}" class="menu-icon">
+        </div>
+
+                <div class="table">
+                    <div class="info">
+                        <h3>BMI Table</h3>
+                        <br>
+                        Body mass index (BMI) is a person’s weight in kilograms divided by the square of height in meters. BMI is an inexpensive and easy screening method for weight category—underweight, healthy weight, overweight, and obesity.
+
+BMI does not measure body fat directly, but BMI is moderately correlated with more direct measures of body fat 1,2,3. Furthermore, BMI appears to be as strongly correlated with various metabolic and disease outcome as are these more direct measures of body fatness 4,5,6,7,8,9.
+                        <h3>How is BMI used?</h3>
+                        <h4>
+                            BMI can be a screening tool, but it does not diagnose the body fatness or health of an individual. To determine if BMI is a health risk, a healthcare provider performs further assessments. Such assessments include skinfold thickness measurements, evaluations of diet, physical activity, and family history10.
+                            
+                        </h4><br>
+                       
+                        
+
+                          
+                          <h2>BMI Table</h2>
+                          
+                          <table>
+                            <tr>
+                              <th>Company</th>
+                              <th>Contact</th>
+                              <th>Country</th>
+                            </tr>
+                            <tr>
+                              <td>Alfreds Futterkiste</td>
+                              <td>Maria Anders</td>
+                              <td>Germany</td>
+                            </tr>
+                            <tr>
+                              <td>Centro comercial Moctezuma</td>
+                              <td>Francisco Chang</td>
+                              <td>Mexico</td>
+                            </tr>
+                            <tr>
+                              <td>Ernst Handel</td>
+                              <td>Roland Mendel</td>
+                              <td>Austria</td>
+                            </tr>
+                            <tr>
+                              <td>Island Trading</td>
+                              <td>Helen Bennett</td>
+                              <td>UK</td>
+                            </tr>
+                            <tr>
+                              <td>Laughing Bacchus Winecellars</td>
+                              <td>Yoshi Tannamuri</td>
+                              <td>Canada</td>
+                            </tr>
+                            <tr>
+                              <td>Magazzini Alimentari Riuniti</td>
+                              <td>Giovanni Rovelli</td>
+                              <td>Italy</td>
+                            </tr>
+                          </table>
+
+
+                           <h3>What are the BMI trends for adults in the United States?</h3>
+                        <h4>
+                            The prevalence of adult BMI greater than or equal to 30 kg/m2 (obese status) has greatly increased since the 1970s. Recently, however, this trend has leveled off, except for older women. Obesity has continued to increase in adult women who are age 60 years and older.
+
+                           To learn more about the trends of adult obesity, visit Adult Obesity Facts.
+                            
+                        </h4>
+                        <br>
+                        <a href="{% url 'bmi:cal'  %}"><button type="button" id="btn">Calculate BMI</button></a>
+
+
+          
+                </div>
+        
+       
+        </div>
+
+</body>
+</html>

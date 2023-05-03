@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+    <link href="">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="{% static 'IMAGES/logo image.png' %}" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="{% url 'bmi:home'  %}">Home</a></li>
+                    <li><a href="{% url 'bmi:history'  %}">HISTORY</a></li>
+                    <li><a href="{% url 'bmi:table'  %}">BMI TABLE</a></li>
+                    <li><a href="{% url 'bmi:cal'  %}">MY BMI Calculator</a></li>
+                </ul>
+            </nav>
+            <img src="{% static 'IMAGES/logo image.png' %}" class="menu-icon">
+        </div>
+
+                <div class="calculate">
+                    <div class="wrapper">
+                        <h3 id="b"> BMI Calculator</h3> <br>
+                        <p>Height in CM:
+                            <input type="text" id="height"><br><span id="height_error"></span>
+                        </p>
+                
+                        <p>Weight in KG:
+                            <input type="text" id="weight"><br><span id="weight_error"></span>
+                        </p>
+                
+                        <button id="btn">Calculate</button>
+                        <p id="output"></p>
+                    </div>  
+
+          
+                </div>
+        
+       
+        </div>
+
+</body>
+</html>

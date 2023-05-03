@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage Design</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+
+    <link href="">
+</head>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="{% static 'IMAGES/logo image.png' %}" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="{% url 'bmi:home'  %}">Home</a></li>
+                    <li><a href="{% url 'bmi:history' %}">HISTORY</a></li>
+                    <li><a href="{% url 'bmi:table'  %}">BMI TABLE</a></li>
+                    <li><a href="{% url 'bmi:cal' %}">MY BMI</a></li>
+                </ul>
+            </nav>
+            <img src="{% static 'IMAGES/logo image.png' %}" class="menu-icon">
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h1>HEALTHLINE</h1>
+                <p> Your health is your wealth. If you have something you've never had, you must be willing to do something you've never done.
+                    Get fit,feel great.Your fitness, your future.
+                </p>
+                <a href="{% url 'bmi:cal'  %}"><button type="button" id="btn">Calculate BMI</button></a>
+            </div>
+         <div class="col">
+            <div class="card card1">
+
+                <h5>Hourglass</h5>
+                <p>Get fit,feel great.</p>
+            </div>
+            
+              <div class="card card2">
+                <h5>Apple</h5>
+                <p>Get fit,feel great.</p> <br>
+              </div>
+            </div>
+            <div class="cols">
+                <div class="cardb card3">
+    
+                    <h5>Hourglass</h5>
+                    <p>Get fit,feel great.</p>
+                </div>
+                <div class="cardb card4">
+    
+                    <h5>Hourglass</h5>
+                    <p>Get fit,feel great.</p>
+                </div>
+            </div>
+
+           
+        
+       
+        </div>
+   
+   
+   
+   
+   
+    </div>
+
+
+
+    
+</body>
+</html>
